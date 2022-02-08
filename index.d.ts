@@ -26,6 +26,10 @@ declare module '@twotalltotems/react-native-otp-input' {
     /**
      * Style of highlighted status for input fields
      */
+    codeInputAlreadyFieldStyle?: TextStyle;
+    /**
+     * Style of highlighted status for input fields
+     */
     codeInputHighlightStyle?: TextStyle;
     /**
      * Callback function
