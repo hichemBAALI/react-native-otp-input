@@ -1,6 +1,6 @@
 {
   "name": "@hichembaali/react-native-otp-input",
-  "version": "1.3.12",
+  "version": "1.3.14",
   "description": "is a tiny JS library for one time passcode (OTP). Supports smart input suggestion on iOS and code autofill on Android (it will be filled when you press the copy button on the SMS notification bar)",
   "main": "./dist/index.js",
   "types": "./index.d.ts",
@@ -46,10 +46,8 @@
     "phone",
     "verification"
   ],
-  "author": "TTT Studio (https://ttt.studio)",
   "contributors": [
-    "Becky Wu <becky.wu@ttt.studio> (https://github.com/BeckyWu220)",
-    "Felipe Peña <felipe@penya.cl> (http://felipe.penya.cl)"
+    "Hichem BAALI <hichem.baali.pro@gmail.com> (https://github.com/hichemBAALI)"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -78,5 +76,6 @@
   "homepage": "https://github.com/hichemBAALI/react-native-otp-input#readme",
   "directories": {
     "example": "example"
-  }
+  },
+  "author": "Hichem BAALI"
 }
