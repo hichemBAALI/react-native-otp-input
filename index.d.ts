@@ -22,6 +22,10 @@ declare module '@hichembaali/react-native-otp-input' {
     /**
      * Style of the input fields
      */
+    hideCursor: boolean;
+    /**
+     * Style of the input fields
+     */
     codeInputFieldStyle?: TextStyle;
     /**
      * Style of highlighted status for input fields

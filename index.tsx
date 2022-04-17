@@ -9,6 +9,7 @@ import { codeToArray } from './helpers/codeToArray'
 
 export default class OTPInputView extends Component<InputProps, OTPInputViewState> {
     static defaultProps: InputProps = {
+        hideCursor: true,
         pinCount: 6,
         autoFocusOnLoad: true,
         secureTextEntry: false,
@@ -182,7 +183,7 @@ export default class OTPInputView extends Component<InputProps, OTPInputViewStat
     }
 
     renderOneInputField = (_: TextInput, index: number) => {
-        const { codeInputFieldStyle, codeInputHighlightStyle, codeInputAlreadyFieldStyle = codeInputFieldStyle, secureTextEntry, editable, keyboardType, selectionColor, keyboardAppearance } = this.props
+        const { hideCursor, codeInputFieldStyle, codeInputHighlightStyle, codeInputAlreadyFieldStyle = codeInputFieldStyle, secureTextEntry, editable, keyboardType, selectionColor, keyboardAppearance } = this.props
         const { defaultTextFieldStyle } = styles
         const { selectedIndex, digits } = this.state
         const { clearInputs, placeholderCharacter, placeholderTextColor } = this.props
@@ -191,6 +192,7 @@ export default class OTPInputView extends Component<InputProps, OTPInputViewStat
         return (
             <View pointerEvents="none" key={index + "view"} testID="inputSlotView">
                 <TextInput
+                    caretHidden={hideCursor}
                     testID="textInput"
                     underlineColorAndroid='rgba(0,0,0,0)'
                     style={selectedIndex === index ? [defaultTextFieldStyle, codeInputStyle, codeInputHighlightStyle] : [defaultTextFieldStyle, codeInputStyle]}
