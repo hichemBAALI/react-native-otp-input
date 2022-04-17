@@ -22,7 +22,7 @@ declare module '@hichembaali/react-native-otp-input' {
     /**
      * Style of the input fields
      */
-    hideCursor: boolean;
+    hideCursor?: boolean;
     /**
      * Style of the input fields
      */
